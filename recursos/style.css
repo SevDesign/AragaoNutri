@@ -28,12 +28,14 @@ Cores atuais:
 }
 .icon-container .icon-logo {
   width: 2.5rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0;
 }
 .icon-container .icon-nome {
   width: 8rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0;
 }
 
@@ -187,6 +189,7 @@ Cores atuais:
   text-align: left; /* Texto alinhado à esquerda para leitura */
   /* O TRUQUE DO ALINHAMENTO: */
   /* A lista se comporta como um bloco centralizado, mas o texto dentro é esquerda */
+  width: -moz-fit-content;
   width: fit-content;
 }
 .consultas .planos-container .plano-container .plano-lista li {
@@ -275,7 +278,8 @@ Cores atuais:
 }
 .consultas .etapas-container .etapa .etapa-img {
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 0.5rem;
 }
 .consultas .info-container {
@@ -520,7 +524,7 @@ Cores atuais:
   opacity: 0.8;
 }
 .rodape .rodape-container .rodape-col .crn {
-  display: none;
+  display: block;
   color: #ffcc00;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -531,7 +535,6 @@ Cores atuais:
 .rodape .rodape-container .rodape-col .rodape-links, .rodape .rodape-container .rodape-col .rodape-contato {
   list-style: none;
   padding: 0;
-  /* Ícones de contato */
 }
 .rodape .rodape-container .rodape-col .rodape-links li, .rodape .rodape-container .rodape-col .rodape-contato li {
   margin-bottom: 0.8rem;
@@ -544,6 +547,9 @@ Cores atuais:
 .rodape .rodape-container .rodape-col .rodape-links a:hover, .rodape .rodape-container .rodape-col .rodape-contato a:hover {
   color: #ffcc00;
   padding-left: 5px; /* Efeitozinho de movimento */
+}
+.rodape .rodape-container .rodape-col .rodape-links, .rodape .rodape-container .rodape-col .rodape-contato {
+  /* Ícones de contato */
 }
 .rodape .rodape-container .rodape-col .rodape-links i, .rodape .rodape-container .rodape-col .rodape-contato i {
   margin-right: 10px;
@@ -651,6 +657,4 @@ Cores atuais:
   100% {
     transform: translateX(-5%); /* Volta */
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
