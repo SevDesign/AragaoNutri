@@ -169,11 +169,11 @@ document.getElementById('form-agendamento').addEventListener('submit', (e) => {
     const telefoneNutri = "558597029871"; 
 
     // Monta a mensagem
-    const mensagem = `Olá Arthur! Me chamo *${nome}* (${idade} anos).%0A%0A` +
+    const mensagem = `Olá Arthur! Me chamo ${nome} (${idade} anos).%0A%0A` +
                      `Gostaria de agendar uma consultoria.%0A` +
-                     `🎯 *Objetivo:* ${objetivo}%0A` +
-                     `📅 *Dias:* ${diasSelecionados}%0A` +
-                     `⏰ *Turno:* ${turno}`;
+                     `*Objetivo:* ${objetivo}%0A` +
+                     `*Dias:* ${diasSelecionados}%0A` +
+                     `*Turno:* ${turno}%0A`;
 
     const link = `https://wa.me/${telefoneNutri}?text=${mensagem}`;
     window.open(link, '_blank');
