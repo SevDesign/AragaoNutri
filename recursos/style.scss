@@ -181,7 +181,7 @@ Cores atuais:
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 55rem;
+        max-width: max-content;
         width: 100%;
         margin-bottom: 1.4rem;
         
@@ -195,6 +195,7 @@ Cores atuais:
             .plano-titulo {
                 font-size: 1.8rem;
                 margin: 0 0 1.5rem 0;
+                text-wrap: nowrap;
             }
 
             .plano-lista {
@@ -222,6 +223,51 @@ Cores atuais:
                         margin-top: 4px; /* Ajuste fino para alinhar com o texto */
                         font-size: 0.9rem;
                     }
+                }
+            }
+        }
+    }
+
+    .planos-base-container {
+        width: 80%;
+        max-width: 60rem;
+        margin: 0 auto 2rem auto;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+
+        .base-titulo {
+            font-size: 1.3rem;
+            margin: 0 0 1rem 0;
+            color: #fff; 
+            font-weight: 600;
+        }
+
+        .base-lista {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 1rem;
+                opacity: 0.9;
+
+                i {
+                    color: #ffcc00; 
+                    font-size: 0.9rem;
                 }
             }
         }
@@ -727,6 +773,45 @@ Cores atuais:
 
     .consultas .etapas-container .etapa .etapa-img{
         height: 400px;
+    }
+
+    /* Responsividade dos Planos */
+    .consultas .planos-container {
+        width: 80%;
+        max-width: none;
+        gap: 2rem; /* Cria um respiro entre as 3 colunas */
+    }
+
+    .consultas .planos-container .plano-container .plano-titulo {
+        font-size: 2rem;
+    }
+
+    .consultas .planos-container .plano-container .plano-lista li {
+        font-size: 1.1rem;
+    }
+
+    /* Responsividade dos Benefícios Comuns */
+    .consultas .planos-base-container {
+        width: 80%; /* Mantém alinhado com o container de planos e etapas */
+        padding: 2rem;
+    }
+
+    .consultas .planos-base-container .base-titulo {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .consultas .planos-base-container .base-lista {
+        gap: 2.5rem; /* Espaça mais os itens horizontais em telas grandes */
+    }
+
+    .consultas .planos-base-container .base-lista li {
+        font-size: 1.1rem;
+    }
+
+    .consultas .planos-base-container {
+        width: 80%; /* Mantém alinhado com o container de planos e etapas */
+        padding: 2rem;
     }
 }
 
